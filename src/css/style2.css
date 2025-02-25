@@ -114,7 +114,7 @@ letter-spacing: 0.36px;
 
 .session-status{
     display: flex;
-    width: 240px;
+    width: 220px;
     padding: 9px 20px 15px 20px;
     justify-content: center;
     align-items: center;
@@ -122,7 +122,7 @@ letter-spacing: 0.36px;
     background: #F2E6B9;
     position: absolute;
     top: 200px;
-    right: 50px;  
+    right: 55px;  
 }
 .status-text{
     color: #132F67;
@@ -135,34 +135,64 @@ letter-spacing: 0.36px;
     text-align: right;
 }
 .in-progress{
-    display: flex;
+    /* display: flex; */ 
     width: 200px;
     height: 48px;
     padding: 18px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     gap: 10px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #132F67;
+    
+}
+.progress-text{
+color: #96FFDA;
+font-family: "Clash Display Variable";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+letter-spacing: 0.36px;
+text-align: left;
+}
+
+.progress-text>img{
+    width: 4px;
+height: 4px;
+flex-shrink: 0;
+}
+.progress-time{
+    color: #EBD379;
+    font-family: "Clash Display Variable";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.36px;
+    text-align: left;
 }
 
 .lesson-box {
     margin-top: 70px;
-    background: #eef1f6;
+    background: #F7FAFF;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 15px;
     margin-bottom: 15px;
-    position: relative;
+    position: relative; 
+    text-align: justify; 
+    
 }
 .speech-box {   
+    margin-top: 90px;
     background: #eef1f6;
     padding: 25px;
     border-radius: 8px;
     margin-bottom: 15px;
     position: relative;
     margin-top: 10px;
-    /* display:none; */
+    display:none;
    
 }
 
@@ -187,31 +217,97 @@ letter-spacing: 0.36px;
 }
 .controls {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    width: 1200px;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 15px 15px;
+    background: linear-gradient(0deg, #F7FAFF 42.01%, rgba(247, 250, 255, 0.00) 100%);
+
 }
-.script-size, .more, .begin-test {
-    background: #f3c623;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.microphone {
-    background: #1b6ca8;
-    color: white;
+.script-size{   
+    display: flex;
+    width: 194px;
+    height: 60px;
     padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 15px;
+    background: #132F67;
+
+    color: #E1E6EF;
+
+font-family: "Clash Display Variable";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 100% */
+letter-spacing: 0.36px;
+}
+.more{   
+    display: flex;
+    width: 194px;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 15px 0px 0px;
+    background: #132F67;
+
+    color: #E1E6EF;
+
+font-family: "Clash Display Variable";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 100% */
+letter-spacing: 0.36px;
+}
+
+.begin-record{
+    display: flex;
+    justify-content: space-between;
+}
+.begin-test, .attempts{
+    width: 194px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    font-size: 14px;
+    background: #F2E6B9;
+    color: #132F67;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures text is centered */
+}
+
+
+.microphone {   
+    width: 788px;
+    height: 68px;
+    flex-shrink: 0;
     border-radius: 15px;
     border: 6px solid #EBD379;
     background: #132F67;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
     
 }
-.attempts {
-    font-size: 14px;
+.microphone>img{
+    width: 27px;
+    height: 42px;
+    flex-shrink: 0;
+    aspect-ratio: 9/14;
+    stroke-width: 3px;
+    stroke: #EBD379;    
 }
+
+
 .footer {
     border-radius: 15px;
     background: #EBD379;
