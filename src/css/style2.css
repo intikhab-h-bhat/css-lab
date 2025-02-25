@@ -5,7 +5,7 @@ body {
 }
 .header {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     background: #0c0c0c;
     color: white;
@@ -30,6 +30,7 @@ gap: 10px;
 .nav {
     /* color: #f3c623; */
    margin-left: 150px;
+   flex-grow: 1;
     
 }
 .nav ul {
@@ -67,8 +68,9 @@ letter-spacing: 0.36px;;
 .profile {
     display: flex;
     float: right;
-    align-items: center;
+    align-items: right;
     gap: 15px;
+    margin-left: auto;
 }
 .sidebar {
     position: absolute; /* Keep it outside the flow */
@@ -98,27 +100,73 @@ letter-spacing: 0.36px;;
     border-radius: 10px;
 }
 .breadcrumb {
-    color: #888;
+    /* color: #888;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+color: #132F67;
+font-family: "Clash Display Variable";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 100% */
+letter-spacing: 0.36px;
 }
+
+.session-status{
+    display: flex;
+    width: 240px;
+    padding: 9px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #F2E6B9;
+    position: absolute;
+    top: 200px;
+    right: 50px;  
+}
+.status-text{
+    color: #132F67;
+    font-family: "Clash Display Variable";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.36px;
+    text-align: right;
+}
+.in-progress{
+    display: flex;
+    width: 200px;
+    height: 48px;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #132F67;
+}
+
 .lesson-box {
-    /* background: #eef1f6;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px; */
+    margin-top: 70px;
     background: #eef1f6;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
     position: relative;
 }
+.speech-box {   
+    background: #eef1f6;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+    margin-top: 10px;
+    /* display:none; */
+   
+}
+
 .lesson-label {
-    /* background: #3f72af;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px; */
     border-radius: 5px;
     background: #132F67;
     color: white;
@@ -129,14 +177,12 @@ letter-spacing: 0.36px;;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px; 
   color: #E1E6EF;
-
 font-family: "Clash Display Variable";
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: 18px; /* 100% */
 letter-spacing: 0.36px;
-
   
 }
 .controls {
@@ -158,6 +204,10 @@ letter-spacing: 0.36px;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 10px;
+    border-radius: 15px;
+    border: 6px solid #EBD379;
+    background: #132F67;
+    
 }
 .attempts {
     font-size: 14px;
