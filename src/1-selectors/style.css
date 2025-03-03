@@ -1,0 +1,21 @@
+body{
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+
+#second{
+    color:red;
+}
+
+.purple{
+    color:purple;
+    font-family: monospace;
+    
+}
+
+.highlight{
+    background-color: yellow;
+    font-weight: bolder;
+    font-style: italic;
+}
+
